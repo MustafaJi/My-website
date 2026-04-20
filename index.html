@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Web Developer & Designer</title>
+    <title>Syed Mustafa - Web Developer & Designer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -34,6 +34,7 @@
             <p>I create stunning, high-performance websites that drive results for businesses like yours.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Get Quote</a>
+                <a href="#services" class="btn btn-secondary">My Services</a>
             </div>
         </div>
     </section>
@@ -44,7 +45,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Passionate Developer with 2 Years Experience</h3>
+                    <h3>Passionate Developer with 2+ Years Experience</h3>
                     <p>I'm a full-stack developer specializing in modern web technologies. I help businesses grow through beautiful, fast, and SEO-optimized websites.</p>
                     <div class="skills">
                         <div class="skill-item">
@@ -77,17 +78,17 @@
                 <div class="service-card">
                     <i class="fas fa-laptop-code"></i>
                     <h3>Custom Websites</h3>
-                    <p>Beautiful, responsive websites tailored to your brand and business goals.</p
+                    <p>Beautiful, responsive websites tailored to your brand and business goals. Fast, SEO-friendly, and mobile-optimized.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-mobile-alt"></i>
                     <h3>Mobile Apps</h3>
-                    <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                    <p>Native and cross-platform mobile applications for iOS and Android with modern UI/UX design.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-search"></i>
                     <h3>SEO Optimization</h3>
-                    <p>Improve your search rankings and get more organic traffic.</p>
+                    <p>Improve your search rankings and get more organic traffic with technical SEO and content optimization.</p>
                 </div>
             </div>
         </div>
@@ -110,12 +111,17 @@
                             <i class="fas fa-phone"></i>
                             <span>+91 8179001977</span>
                         </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
@@ -125,11 +131,11 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Syed Mustafa. All rights reserved.</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/mustafaji" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/mustafaji" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/mustafaji" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
